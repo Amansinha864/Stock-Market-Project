@@ -29,7 +29,7 @@ selected =option_menu(
 
 if selected== "Home" :
     st.title(f"About Our Project ")
-    image = Image.open("C:/Users/Hello/Desktop/Minor Project/project.png")       #importing images
+    image = Image.open("C:/Users/Hello/StockProject/project.png")       #importing images
     st.image(image,use_column_width= True)
     st.header(f"What is the Stock Market?")          #intro
     st.caption("""The stock market is a place where people buy and sell shares, or little parts of 
@@ -49,12 +49,12 @@ if selected== "Home" :
                 less importance on dividend income and are more prepared to take a chance when 
                 investing in small companies. Growth investors frequently prefer technology stocks 
                 due to their great growth potential.""")          
-    image = Image.open("C:/Users/Hello/Desktop/Minor Project/images2.jpg")
+    image = Image.open("C:/Users/Hello/StockProject/images2.jpg")
     st.image(image,use_column_width= True)
 
 if selected== "Project":
     st.title(""" **Stock Market Data Analysis** """)
-    image = Image.open("C:/Users/Hello/Desktop/Minor Project/images.jpg")
+    image = Image.open("C:/Users/Hello/Project/images.jpg")
     st.image(image,use_column_width= True)
     #creating a sidebar header
     st.sidebar.header('User Input Data')           
@@ -112,7 +112,7 @@ if selected== "Project":
     if click:
         #stored in google excel sheet 
         st.header('ALL INFORMATION')
-        sheet_id = '1ZEIhZijTWNZFYmnBSvznAkjunYBy2-FX7hbPxzzpNRU'
+        sheet_id = '1ZEIhZijTWNZFYmnBSy2-FX7hbPxzzpNRU'
         df =pd.read_csv(f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv")
         st.write(df)
 
